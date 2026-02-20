@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyCalcTools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        <marquee style="color: white;">DEVELOPED BY RAVI</marquee>
+    </h2>
+    <h1>DailyCalcTools</h1>
+    <div class="container">
+
+        <!-- Age Calculator -->
+        <div class="card">
+            <h3>Age Calculator</h3>
+            <input type="date" id="dob">
+            <button onclick="calculateAge()">Calculate</button>
+            <div id="ageResult" class="result"></div>
+        </div>
+
+        <!-- Percentage Calculator -->
+        <div class="card">
+            <h3>Percentage Calculator</h3>
+            <input type="number" id="total" placeholder="Total Marks">
+            <input type="number" id="obtained" placeholder="Obtained Marks">
+            <button onclick="calculatePercentage()">Calculate</button>
+            <div id="percentResult" class="result"></div>
+        </div>
+
+        <!-- EMI Calculator -->
+        <div class="card">
+            <h3>EMI Calculator</h3>
+            <input type="number" id="loan" placeholder="Loan Amount">
+            <input type="number" id="rate" placeholder="Interest Rate (%)">
+            <input type="number" id="months" placeholder="Months">
+            <button onclick="calculateEMI()">Calculate</button>
+            <div id="emiResult" class="result"></div>
+        </div>
+
+        <!-- GST Calculator -->
+        <div class="card">
+            <h3>GST Calculator</h3>
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="number" id="gst" placeholder="GST %">
+            <button onclick="calculateGST()">Calculate</button>
+            <div id="gstResult" class="result"></div>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="card">
+            <h3>BMI Calculator</h3>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (m)">
+            <button onclick="calculateBMI()">Calculate</button>
+            <div id="bmiResult" class="result"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
